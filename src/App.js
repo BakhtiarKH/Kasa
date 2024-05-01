@@ -1,8 +1,16 @@
-import './App.css';
-import liste from './assets/api/logements.json'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./pages/style/style.css";
+import Index from "./pages/Index.js";
+import Layout from "./pages/layouts/Layout.js";
 
-function App() {
-  console.log(liste)
+export default function App() {
+  return (
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Index />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+  );
 }
-
-export default App;

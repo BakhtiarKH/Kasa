@@ -1,0 +1,166 @@
+// Desktop general
+
+body {
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 100px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+header {
+    height: 68px;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 57px;
+
+        .navOption {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+        }
+
+        .navSelected {
+            text-decoration: underline;
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 209px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logoFooter {
+        margin: 15px 0 0 0;
+        width: 122px;
+    }
+
+    p {
+        font-size: 24px;
+        margin: 35px 0 0 0;
+    }
+}
+
+// Desktop Index
+.banner {
+    display: flex;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    background: black;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+        height: 223px;
+        object-fit: cover;
+        opacity: 0.6;
+        border-radius: 25px;
+    }
+
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.gallery {
+    padding: 50px 50px 0 50px;
+    max-width: 1240px;
+    height: fit-content;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    article {
+        margin: 0 0 50px 0;
+        max-width: 340px;
+        width: 30%;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .locationNom {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 18px;
+            margin: -40px 0 0 15px;
+
+        }
+    }
+}
+
+// Desktop info
+
+.infoGroup {
+    height: 298px;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .infoBloc {
+    width: 85%;
+    height: 52px;
+    margin: 0 auto;
+    background-color: #FF6060;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+
+    h2 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        margin: 0 0 0 10px;
+    }
+
+    .ouvrir {
+        margin: 0 10px 0 0;
+        position: relative;
+        bottom: 3px;
+    }
+
+    .ouvrir:hover {
+        cursor: pointer;
+    }
+}
+}
